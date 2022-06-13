@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220613235252" />
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
   <title>Create-X</title>
 </head>
@@ -15,7 +15,9 @@
     <div class="container">
       <div class="navbar__block">
         <div class="navbar__block-1">
-          <img src="img/logo.svg" alt="Icon: CreateX" class="navbar__image" />
+          <a href="#" class="navbar__logo-link"
+            ><img src="img/logo.svg" alt="Icon: CreateX" class="navbar__image"
+          /></a>
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#" class="navbar__link">About Us</a>
@@ -165,20 +167,136 @@
         We are rightfully considered to be the best construction company in the
         USA.
       </p>
-      <div class="value__block">
-        <img
-          class="value__image"
-          src="img/value-bcg.png"
-          alt="Icon: Team build"
-        />
+      <div class="value__block" id="player">
+        <script src="https://www.youtube.com/iframe_api?_v=20220613235252"></script>
+        <!-- <a href="#" class="value__link"> -->
+        <img class="value__play" src="img/Play-video.svg" alt="Icon: Play" />
+        <!-- </a> -->
       </div>
     </div>
     <!-- /.value__createx -->
+    <div class="value__core">
+      <h1 class="value__title">Our core values</h1>
+      <p class="value__statue">
+        Our mission is to set the highest standards for construction sphere.
+      </p>
+      <div class="value__standarts">
+        <div class="value__quality _icon-icon-like">
+          <!-- <picture><source srcset="img/" type="image/webp"><img src="img/" alt="" /></picture> -->
+          <h3 class="value__standarts-title">Quality</h3>
+          <p class="value__standarts-statue">
+            Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam
+            velit nostrud aliquip sunt.
+          </p>
+        </div>
+        <div class="value__line"></div>
+        <div class="value__safety _icon-icon-hand">
+          <!-- <picture><source srcset="img/" type="image/webp"><img src="img/" alt="" /></picture> -->
+          <h3 class="value__standarts-title">Safety</h3>
+          <p class="value__standarts-statue">
+            Anim reprehenderit sint voluptate exercitation adipisicing laborum
+            adipisicing. Minim empor est ea.
+          </p>
+        </div>
+        <div class="value__line"></div>
+        <div class="value__comfort _icon-icon-slippers">
+          <!-- <picture><source srcset="img/" type="image/webp"><img src="img/" alt="" /></picture> -->
+          <h3 class="value__standarts-title">Comfort</h3>
+          <p class="value__standarts-statue">
+            Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+            voluptate ullamco proident ea ad.
+          </p>
+        </div>
+      </div>
+      <!-- /.value__standarts -->
+    </div>
+    <!-- /.value__core -->
+    <div class="value__question">
+      <h1 class="value__main-title">Want to know more? Ask us a question:</h1>
+      <form
+        action="send.php"
+        method="POST"
+        class="value__form"
+      >
+        <div class="value__form-name">
+          <h3 class="value__question-title">Name</h3>
+          <input
+            class="value__name"
+            placeholder="Your name"
+            type="text"
+            name="name"
+            required
+          />
+        </div>
+        <div class="value__form-phone">
+          <h3 class="value__question-title">Phone</h3>
+          <input
+            class="value__phone"
+            placeholder="Your phone"
+            type="tel"
+            name="phone"
+            required
+          />
+        </div>
+        <div class="value-form-message">
+          <h3 class="value__question-title">Message</h3>
+          <textarea
+            class="value__message"
+            placeholder="Your message"
+            name="message"
+            required
+          /></textarea>
+        </div>
+        <div class="value__form-button">
+          <button class="value__button" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <!-- /.value__question -->
   </div>
   <!-- /.value__wrapper -->
 </section>
+ <section class="services">
+  <!-- <picture><source srcset="img/view-bcd.webp" type="image/webp"><img class="services__image" src="img/view-bcd.png" alt="" /></picture> -->
+  <div class="services__wrapper">
+    <div class="services__main">
+      <h1 class="services__title">Our services</h1>
+      <p class="services__subtitle">
+        Createx Construction Bureau is a construction giant with a full range of
+        construction services.
+      </p>
+    </div>
+    <!-- /.services__main -->
+    <div class="services__main-two">
+      <div class="services__block">
+        <div class="services__subblock _icon-icon-construction"></div>
+        <p class="services__subsentence">Construction</p>
+      </div>
+      <div class="services__block">
+        <div class="services__subblock _icon-icon-plan"></div>
+        <p class="services__subsentence">Project Development</p>
+      </div>
+      <div class="services__block services__block-3">
+        <div class="services__subblock _icon-icon-pantone"></div>
+        <p class="services__subsentence">Interior Design</p>
+      </div>
+      <div class="services__block">
+        <div class="services__subblock _icon-icon-painting"></div>
+        <p class="services__subsentence">Repairs</p>
+      </div>
+    </div>
+    <!-- /.services__main -->
+    <div class="services__view">
+      <h2 class="services__view-title">Learn more about our services</h2>
+      <button class="services__button">View services</button>
+    </div>
+    <!-- /.services__view -->
+  </div>
+  <!-- /.services__wrapper -->
+</section>
+<!-- /.services -->
 
     
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20220613235252"></script>
   </body>
 </html>
