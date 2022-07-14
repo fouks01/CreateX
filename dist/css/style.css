@@ -1062,6 +1062,12 @@ header {
 
 .partners__clients {
   margin-right: 135px;
+  display: none;
+}
+
+.partners__clients--active {
+  margin-right: 135px;
+  display: block;
 }
 
 .partners__saying {
@@ -1078,13 +1084,18 @@ header {
 }
 
 .partners__minipic {
+  width: 72px;
+  height: 72px;
   margin-bottom: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .partners__statue {
   margin: 0;
   max-width: 600px;
-  max-height: 78px;
+  max-height: 335px;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
@@ -1169,89 +1180,6 @@ ul li {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-.no-webp .services__block-1:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/construction-bcd.jpg");
-  background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/construction-bcd.jpg");
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/construction-bcd.jpg"); }
-
-.services__block-1:hover {
-  background-size: cover;
-}
-
-.no-webp .services__block-2:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/project-bcd.jpg") center/100%;
-  background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/project-bcd.jpg") center/100%;
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/project-bcd.jpg") center/100%; }
-
-.no-webp .services__block-3:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/interior-bcd.png");
-  background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/interior-bcd.png");
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/interior-bcd.png"); }
-
-.no-webp .services__block-4:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/repair-bcnd.jpg");
-  background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/repair-bcnd.jpg");
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/repair-bcnd.jpg"); }
-
-.services__block-4:hover {
-  background-size: 100%;
-}
-
-.browse-block {
-  overflow: hidden;
-}
-
-.browse-block .browse-image,
-.browse-block .browse-image-blue {
-  width: 390px;
-  height: 345px;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.browse-block .browse-link {
-  display: block;
-  cursor: pointer;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
-}
-
-.browse-block:hover .browse-image,
-.browse-block:hover .browse-image-blue {
-  width: 390px;
-  height: 277px;
-}
-
-.browse-block:hover .browse-link {
-  opacity: 1;
-}
-
-.browse-link:hover {
-  color: #5A87FC;
-  border: 1px solid #5A87FC;
-}
-
-.browse-button:hover {
-  -webkit-transform: scale(105%);
-      -ms-transform: scale(105%);
-          transform: scale(105%);
-}
-
-.partners-image {
-  cursor: pointer;
-}
-
-.partners-image:hover {
-  opacity: 1;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 @media (min-width: 768px) {
@@ -1382,6 +1310,7 @@ a {
   }
 
   .value__play {
+    cursor: pointer;
     -webkit-transition: all 0.5s ease-in 0s;
     -o-transition: all 0.5s ease-in 0s;
     transition: all 0.5s ease-in 0s;
@@ -1423,6 +1352,94 @@ a {
   .services__block-3:hover .services__subblock,
   .services__block-4:hover .services__subblock {
     color: white;
+  }
+
+  .no-webp .services__block-1:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/construction-bcd.jpg");
+    background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/construction-bcd.jpg");
+    background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/construction-bcd.jpg"); }
+
+  .services__block-1:hover {
+    background-size: cover;
+  }
+
+  .no-webp .services__block-2:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/project-bcd.jpg") center/100%;
+    background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/project-bcd.jpg") center/100%;
+    background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/project-bcd.jpg") center/100%; }
+
+  .no-webp .services__block-3:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/interior-bcd.png");
+    background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/interior-bcd.png");
+    background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/interior-bcd.png"); }
+
+  .no-webp .services__block-4:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url("../img/repair-bcnd.jpg");
+    background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/repair-bcnd.jpg");
+    background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/repair-bcnd.jpg"); }
+
+  .services__block-4:hover {
+    background-size: 100%;
+  }
+
+  .browse-block {
+    overflow: hidden;
+  }
+
+  .browse-block .browse-image,
+  .browse-block .browse-image-blue {
+    width: 390px;
+    height: 345px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .browse-block .browse-link {
+    display: block;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+  }
+
+  .browse-block:hover .browse-image,
+  .browse-block:hover .browse-image-blue {
+    width: 390px;
+    height: 277px;
+  }
+
+  .browse-block:hover .browse-link {
+    opacity: 1;
+  }
+
+  .browse-link:hover {
+    color: #5A87FC;
+    border: 1px solid #5A87FC;
+  }
+
+  .browse-button:hover {
+    -webkit-transform: scale(105%);
+        -ms-transform: scale(105%);
+            transform: scale(105%);
+  }
+
+  .partners-image {
+    cursor: pointer;
+  }
+
+  .partners-image:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+
+  .partners__prev,
+  .partners__next {
+    cursor: pointer;
   }
 }
 
@@ -2266,10 +2283,22 @@ a {
 
 .webp .browse-top::before { background-image: url(../img/browse-next.webp); }
 
-.webp .services__block-1:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/construction-bcd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/construction-bcd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/construction-bcd.webp); }
+@media (min-width: 768px) {
 
-.webp .services__block-2:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/project-bcd.webp) center/100%; background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/project-bcd.webp) center/100%; background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/project-bcd.webp) center/100%; }
+  .webp .services__block-1:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/construction-bcd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/construction-bcd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/construction-bcd.webp); }
+}
 
-.webp .services__block-3:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/interior-bcd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/interior-bcd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/interior-bcd.webp); }
+@media (min-width: 768px) {
 
-.webp .services__block-4:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/repair-bcnd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/repair-bcnd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/repair-bcnd.webp); }
+  .webp .services__block-2:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/project-bcd.webp) center/100%; background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/project-bcd.webp) center/100%; background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/project-bcd.webp) center/100%; }
+}
+
+@media (min-width: 768px) {
+
+  .webp .services__block-3:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/interior-bcd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/interior-bcd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/interior-bcd.webp); }
+}
+
+@media (min-width: 768px) {
+
+  .webp .services__block-4:hover { background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 33, 44, 0.6)), to(rgba(30, 33, 44, 0.6))), url(../img/repair-bcnd.webp); background: -o-linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/repair-bcnd.webp); background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url(../img/repair-bcnd.webp); }
+}
