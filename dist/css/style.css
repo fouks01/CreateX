@@ -1075,7 +1075,13 @@ header {
   transform: translate(50px, -110px);
 }
 .facts__totally-2 {
-  transform: translate(73px, -110px);
+  transform: translate(65px, -110px);
+}
+.facts__totally-3 {
+  transform: translate(45px, -110px);
+}
+.facts__totally-4 {
+  transform: translate(50px, -110px);
 }
 
 .facts__subtitle {
