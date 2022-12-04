@@ -404,7 +404,6 @@ header {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 46px;
   line-height: 130%;
   align-items: center;
   text-align: center;
@@ -634,7 +633,6 @@ header {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 46px;
   line-height: 130%;
   align-items: center;
   text-align: center;
@@ -792,7 +790,6 @@ header {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 46px;
   line-height: 130%;
   align-items: center;
   color: #1E212C;
@@ -1037,10 +1034,11 @@ header {
 }
 
 .facts__main {
-  margin: auto;
+  margin: 0 auto 180px auto;
   max-width: 736px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .facts__title {
@@ -1048,11 +1046,85 @@ header {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 46px;
   line-height: 130%;
   align-items: center;
   text-align: center;
   color: #1E212C;
+}
+
+.facts__numbers {
+  margin-bottom: 10px;
+}
+.facts__numbers-1 {
+  position: relative;
+  margin-left: 10px;
+}
+.facts__numbers-1::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/ellipse-orange.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  bottom: 0;
+  right: 0;
+  left: 6px;
+  z-index: 20;
+}
+.facts__numbers-2 {
+  position: relative;
+}
+.facts__numbers-2::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/ellipse-red.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  bottom: 0;
+  right: 0;
+  left: 6px;
+  z-index: 20;
+}
+.facts__numbers-3 {
+  position: relative;
+}
+.facts__numbers-3::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/ellipse-blue.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  bottom: 0;
+  right: 0;
+  left: 6px;
+  z-index: 20;
+}
+.facts__numbers-4 {
+  position: relative;
+}
+.facts__numbers-4::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/ellipse-green.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  bottom: 0;
+  right: 0;
+  left: 6px;
+  z-index: 20;
+}
+
+.facts__numbers-fake {
+  width: 100%;
+  height: 100%;
 }
 
 .progress-ring__circle {
@@ -1075,7 +1147,7 @@ header {
   transform: translate(50px, -110px);
 }
 .facts__totally-2 {
-  transform: translate(65px, -110px);
+  transform: translate(64px, -110px);
 }
 .facts__totally-3 {
   transform: translate(45px, -110px);
@@ -1094,6 +1166,70 @@ header {
   text-align: center;
   color: #1E212C;
   margin: 20px 0 0 5px;
+}
+
+.facts__news-title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  align-items: center;
+  text-align: center;
+  color: #1E212C;
+}
+
+.facts__news-1 {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+
+.facts__subtitle-1 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+.facts__news-block-1,
+.facts__news-block-2,
+.facts__news-block-3 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  color: #787A80;
+}
+
+.facts__news-block-statue {
+  margin: 0;
+  border-right: 1px solid gray;
+}
+
+.facts__news-block-1 {
+  width: 103px;
+}
+
+.facts__news-block-3 {
+  display: flex;
+}
+
+.facts__news-blocks {
+  display: flex;
+}
+
+.facts__news-sentense {
+  max-width: 657px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
 }
 
 * {
@@ -1123,6 +1259,20 @@ a {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 2.875rem;
+}
+
+@media (max-width: 532px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 332px) {
+  h2 {
+    font-size: 1.875rem;
+  }
+}
 @media (min-width: 768px) {
   .navbar__item {
     transition: all 0.3s ease-out 0s;
@@ -1291,6 +1441,15 @@ a {
   .partners__prev,
 .partners__next {
     cursor: pointer;
+  }
+
+  .facts__numbers-fake {
+    display: none;
+  }
+}
+@media (max-width: 1530px) {
+  .facts::before {
+    background-size: 35%;
   }
 }
 @media (max-width: 1440px) {
@@ -1650,11 +1809,12 @@ a {
     margin: 0;
   }
 }
-@media (max-width: 930px) {
+@media (max-width: 1010px) {
   .browse-title {
-    font-size: 42px;
+    font-size: 2.3rem;
   }
-
+}
+@media (max-width: 930px) {
   .browse-top {
     margin-left: 50px;
   }
@@ -1697,10 +1857,6 @@ a {
   }
 }
 @media (max-width: 879px) {
-  .value__title {
-    font-size: 38px;
-  }
-
   .value__play {
     max-width: 60px;
     max-height: 60px;
@@ -1771,6 +1927,10 @@ a {
     bottom: 0;
     right: 0;
   }
+
+  .facts::before {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .value {
@@ -1838,7 +1998,6 @@ a {
 
   .services__title {
     padding-top: 85px;
-    font-size: 38px;
   }
 
   .services__subtitle {
@@ -1872,7 +2031,6 @@ a {
   }
 
   .browse-title {
-    font-size: 38px;
     text-align: center;
   }
 
@@ -1920,6 +2078,10 @@ a {
   .partners__saying {
     font-size: 38px;
   }
+
+  .facts__main {
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 590px) {
   .browse-subblock {
@@ -1929,6 +2091,10 @@ a {
 
   .browse-subtitle {
     margin: 60px 0 20px 0;
+  }
+
+  .browse-title {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 559px) {
@@ -1975,16 +2141,25 @@ a {
     margin-bottom: 50px;
   }
 
-  .browse-title {
-    font-size: 31px;
-  }
-
   .partners-title {
     font-size: 30px;
   }
 
   .partners__saying {
     font-size: 31px;
+  }
+}
+@media (max-width: 519px) {
+  .facts__numbers-fake {
+    display: none;
+  }
+
+  .services__main-two {
+    display: block;
+  }
+
+  .services__block {
+    margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 480px) {
@@ -2011,14 +2186,19 @@ a {
   .partners__statue {
     max-height: 195px;
   }
+
+  .facts__main {
+    display: block;
+  }
+
+  .facts__numbers {
+    width: 170px;
+    margin: 0 auto 30px auto;
+  }
 }
 @media (max-width: 420px) {
   .browse-top {
     height: 345px;
-  }
-
-  .browse-title {
-    font-size: 30px;
   }
 
   .browse-block {
@@ -2029,7 +2209,7 @@ a {
 
   .browse-image {
     max-width: 310px;
-    max-height: 265px;
+    max-height: 274px;
   }
 
   .browse-image-blue {
@@ -2067,20 +2247,12 @@ a {
     font-size: 2rem;
   }
 
-  .value__title {
-    font-size: 30px;
-  }
-
   .value__block {
     margin-bottom: 130px;
   }
 
   .value__statue {
     font-size: 1rem;
-  }
-
-  .services__title {
-    font-size: 30px;
   }
 
   .services__subtitle {
