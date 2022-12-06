@@ -1014,7 +1014,6 @@ header {
 
 .facts {
   padding-top: 176px;
-  padding-bottom: 1000px;
   position: relative;
 }
 .facts::before {
@@ -1361,6 +1360,191 @@ header {
   color: #1E212C;
 }
 
+.quick {
+  position: relative;
+  height: 826px;
+}
+.quick::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/quick.png");
+  z-index: -10;
+}
+
+.quick__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  color: #1E212C;
+  margin: 48px 0 0 0;
+}
+
+.quick__main {
+  display: flex;
+  justify-content: end;
+  margin-right: 35px;
+}
+
+.quick__block {
+  width: 495px;
+  height: 666px;
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.quick__label {
+  display: block;
+  position: relative;
+  padding-left: 27px;
+  margin: 20px auto 24px auto;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+  max-width: 415px;
+  text-align: start;
+}
+
+.quick__yourName,
+.quick__tel,
+.quick__email {
+  width: 415px;
+  height: 44px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #9A9CA5;
+  padding-left: 16px;
+  background: #F4F5F7;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+}
+
+.quick__name-title,
+.quick__phone-title,
+.quick__mail-title,
+.quick__message-title {
+  width: 415px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+  margin: auto;
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+.quick__name-title {
+  margin-top: 24px;
+}
+
+.quick__phone-title,
+.quick__mail-title,
+.quick__message-title {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 415px;
+  height: 66px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #9A9CA5;
+  padding-left: 16px;
+  padding-top: 11px;
+  background: #F4F5F7;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+}
+
+.quick__button {
+  width: 174px;
+  height: 44px;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.quick__label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin: auto;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #FF5A30;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1574,6 +1758,16 @@ h2 {
 
   .facts__numbers-fake {
     display: none;
+  }
+
+  .facts__subtitle-1,
+.facts__news-itself-2 {
+    cursor: pointer;
+  }
+  .facts__subtitle-1:hover,
+.facts__news-itself-2:hover {
+    transition: all 0.2s linear;
+    transform: scale(102%);
   }
 }
 @media (max-width: 1530px) {

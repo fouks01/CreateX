@@ -700,6 +700,72 @@
         <button class="browse-button">View portfolio</button>
       </div>
 </section>
+ <section class="quick">
+  <div class="container">
+    <div class="quick__main">
+      <div class="quick__block">
+        <h4 class="quick__title">A quick way to discuss details</h4>
+        <form
+          action="send.php"
+          method="POST"
+          class="footer__form form"
+          novalidate="novalidate"
+        >
+          <div class="quick__name">
+            <h5 class="quick__name-title">Name*</h5>
+            <input
+              type="Your name"
+              placeholder="Your name"
+              class="quick__yourName"
+            />
+          </div>
+          <!-- /.quick__name -->
+          <div class="quick__phone">
+            <h5 class="quick__phone-title">Phone*</h5>
+            <input
+              type="tel"
+              class="quick__tel"
+              placeholder="Your phone number"
+              name="phone"
+              required=""
+              minlength="18"
+              maxlength="18"
+            />
+          </div>
+          <!-- /.quick__phone -->
+          <div class="quick__mail">
+            <h5 class="quick__mail-title">Email</h5>
+            <input
+              type="tel"
+              class="quick__email"
+              placeholder="Your working email"
+            />
+          </div>
+          <!-- /.quick__phone -->
+          <h5 class="quick__message-title">Message*</h5>
+          <div class="quick__message-block">
+            <textarea
+              class="quick__message"
+              placeholder="Your message"
+              name="message"
+            ></textarea>
+          </div>
+          <!-- /.quick__message-block -->
+        </form>
+        <label class="quick__label">
+          <input type="checkbox" checked="checked" />I agree to receive
+          communications from Createx Construction Bureau.
+          <span class="checkmark"></span>
+        </label>
+        <button type="submit" class="quick__button browse-button">
+          SEND REQUEST
+        </button>
+      </div>
+    </div>
+    <!-- /.quick__main -->
+  </div>
+  <!-- /.container -->
+</section>
 
     
     <script src="js/app.min.js"></script>
