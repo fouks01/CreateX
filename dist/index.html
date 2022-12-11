@@ -198,7 +198,7 @@
             adipisicing. Minim empor est ea.
           </p>
         </div>
-        <div class="value__line"></div>
+          <div class="value__line"></div>
         <div class="value__comfort _icon-icon-slippers">
           <!-- <img src="img/" alt="" /> -->
           <h3 class="value__standarts-title">Comfort</h3>
@@ -216,8 +216,7 @@
       <form
         action="send.php"
         method="POST"
-        class="value__form"
-      >
+        class="value__form">
         <div class="value__form-name">
           <h3 class="value__question-title">Name</h3>
           <input
@@ -244,6 +243,7 @@
             class="value__message"
             placeholder="Your message"
             name="message"
+            type="text"
             required
           /></textarea>
         </div>
@@ -706,17 +706,19 @@
       <div class="quick__block">
         <h4 class="quick__title">A quick way to discuss details</h4>
         <form
-          action="send.php"
           method="POST"
           class="footer__form form"
           novalidate="novalidate"
+          onsubmit="send(event, 'send.php')"
         >
           <div class="quick__name">
             <h5 class="quick__name-title">Name*</h5>
             <input
-              type="Your name"
+              type="text"
               placeholder="Your name"
               class="quick__yourName"
+              name="name"
+              type="text"
             />
           </div>
           <!-- /.quick__name -->
@@ -736,9 +738,10 @@
           <div class="quick__mail">
             <h5 class="quick__mail-title">Email</h5>
             <input
-              type="tel"
+              type="email"
               class="quick__email"
               placeholder="Your working email"
+              name="mail"
             />
           </div>
           <!-- /.quick__phone -->
@@ -748,18 +751,19 @@
               class="quick__message"
               placeholder="Your message"
               name="message"
+              type="text"
             ></textarea>
           </div>
           <!-- /.quick__message-block -->
+          <label class="quick__label">
+            <input type="checkbox" checked="checked" />I agree to receive
+            communications from Createx Construction Bureau.
+            <span class="checkmark"></span>
+          </label>
+          <button type="submit" class="quick__button browse-button">
+            SEND REQUEST
+          </button>
         </form>
-        <label class="quick__label">
-          <input type="checkbox" checked="checked" />I agree to receive
-          communications from Createx Construction Bureau.
-          <span class="checkmark"></span>
-        </label>
-        <button type="submit" class="quick__button browse-button">
-          SEND REQUEST
-        </button>
       </div>
     </div>
     <!-- /.quick__main -->
@@ -767,7 +771,119 @@
   <!-- /.container -->
 </section>
 
-    
+    <footer class="footer">
+  <div class="container">
+    <div class="end">
+      <div class="end__left">
+        <div class="end__icon-block">
+          <img
+            src="img/footer-logo.svg"
+            alt="Icon: CreateX"
+            class="end__image"
+          />
+          <div class="end__icon-logo">
+            <a link="#" class="end__WhatsApp-link _icon-Whatsapp"></a>
+            <a link="#" class="end__Messanger-link _icon-Messanger"></a>
+            <a link="#" class="end__facebook-link _icon-Facebook"></a>
+            <a link="#" class="end__Twitter-link _icon-Twitter"></a
+            ><a link="#" class="end__YouTube-link _icon-YouTube"></a>
+          </div>
+          <!-- /.end__icon-logo -->
+        </div>
+        <!-- /.end__icon-block -->
+        <p class="end__article">
+          Createx Construction Bureau has been successfully operating in the USA
+          construction market since 2000. We are proud to offer you quality
+          construction and exemplary service. Our mission is to set the highest
+          standards for construction sphere.
+        </p>
+      </div>
+      <!-- /.end__left -->
+      <div class="end__right">
+        <h4 class="end__right-title">Let’s stay in touch</h4>
+        <form
+          action="send.php"
+          method="POST"
+          class="end__subscribe"
+          novalidate="novalidate"
+        >
+          <input
+            type="email"
+            class="end__input"
+            placeholder="Your email address"
+            name="newsletter"
+            required=""
+          />
+          <button class="end__button" type="submit">SUBSCRIBE</button>
+        </form>
+        <p class="end__under">
+          *Subscribe to our newsletter to receive communications and early
+          updates from Createx Construction Bureau.
+        </p>
+      </div>
+      <!-- /.end__right -->
+      <div class="end__col">
+        <div class="end__col-1">
+          <h4 class="end__col-1-title">HEAD OFFICE</h4>
+          <div class="end__address-block">
+            <span class="end__span-address">Address:</span>
+            <address class="end__address">
+              8502 Preston Rd. Inglewood, New York
+            </address>
+          </div>
+          <!-- /.end__address-block -->
+          <div class="end__call-block">
+            <span class="end__span">Call:</span
+            ><a class="end__link" href="tel:(405) 555-0128"> (405) 555-0128</a>
+          </div>
+          <!-- /.end__call-block -->
+          <div class="end__mail-block">
+            <span class="end__span">Email:</span>
+            <a class="end__link" href="mailto:hello@createx.com"
+              >hello@createx.com</a
+            >
+          </div>
+          <!-- /.end__mail-block -->
+        </div>
+        <!-- /.end__col-1 -->
+        <div class="end__col-2">
+          <ul class="end__col-list">
+            <h4 class="end__col-1-title">WHO WE ARE</h4>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">About Us</a>
+            </li>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">Available Positions</a>
+            </li>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.end__col-2 -->
+        <div class="end__col-3">
+          <ul class="end__col-list">
+            <h4 class="end__col-1-title">OUR EXPERIENCE</h4>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">Services</a>
+            </li>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">Work</a>
+            </li>
+            <li class="end__col-2-list">
+              <a href="#" class="end__col-2-link">News</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.end__col-3 -->
+      </div>
+      <!-- /.end__col -->
+    </div>
+    <!-- /.end -->
+  </div>
+  <!-- /.container -->
+</footer>
+
     <script src="js/app.min.js"></script>
   </body>
 </html>
