@@ -1835,22 +1835,38 @@ h2 {
   }
 }
 @media (min-width: 768px) {
-  .navbar__item {
+  .end__col-2-list,
+.navbar__item {
     transition: all 0.3s ease-out 0s;
   }
-  .navbar__item:hover {
+  .end__col-2-list:hover,
+.navbar__item:hover {
     transform: translate(2px, 2px);
     transition: all 0.3s ease-out 0s;
   }
 
-  .navbar__link:hover {
-    color: #FF5A30;
-  }
-
-  .navbar__image {
+  .end__link:hover,
+.end__col-2-link:hover {
+    transform: translate(5px, 5px);
     transition: all 0.3s ease-out 0s;
   }
-  .navbar__image:hover {
+
+  .end__link:hover,
+.end__col-2-link:hover,
+.end__col-2-link:hover,
+.navbar__link:hover {
+    color: #FF5A30;
+    opacity: 1;
+  }
+
+  .end__go-link,
+.end__image,
+.navbar__image {
+    transition: all 0.3s ease-out 0s;
+  }
+  .end__go-link:hover,
+.end__image:hover,
+.navbar__image:hover {
     transform: scale(115%);
     transition: all 0.5s ease-out 0s;
   }
