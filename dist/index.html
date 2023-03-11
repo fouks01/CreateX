@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
   <title>Create-X</title>
 </head>
 
-  <body>
+  <body id="navbar">
     <header>
   <nav class="navbar">
     <div class="container">
@@ -300,52 +304,103 @@
 
     <section class="browse">
   <div class="browse-wrapper">
-    <div class="browse-main">
+    <div class="browse-main swiper">
       <div class="browse-top">
         <h2 class="browse-title">
           Browse our selected projects and learn more about our work
         </h2>
-        <div class="browse-arrows">
-          <!-- <img src="img/browse-arrow-prev.svg" alt="" class="browse__prev" />
-          <img src="img/browse-next.png" alt="" class="browse__next" /> -->
-        </div>
-        <!-- <div class="browse__prev _icon-browse-arrow-prev"></div>
-        <div class="browse__next _icon-browse-arrow-next"></div> -->
       </div>
-      <div class="browse-carousel">
-        <div class="browse-block browse-block--active browse-block-1">
-          <img
-            src="img/red-tower.png"
-            alt="Icon: Red Tower"
-            class="browse-image"
-          />
-          <h3 class="browse-minititle">Red Finger Building</h3>
-          <p class="browse-description">Business Centers</p>
-          <a class="browse-link">View Project</a>
-        </div>
-        <div class="browse-block browse-block-2">
-          <img
-            src="img/blue-tower.png"
-            alt="Icon: Blue Tower"
-            class="browse-image-blue"
-          />
-          <h3 class="browse-minititle">Cubes Building</h3>
-          <p class="browse-description">Business Centers</p>
-          <a class="browse-link">View Project</a>
-        </div>
 
-        <div class="browse-block browse-block-3">
-          <img
-            src="img/grey-tower.png"
-            alt="Icon: Grey Tower"
-            class="browse-image"
-          />
-          <h3 class="browse-minititle">The Pencil Building</h3>
-          <p class="browse-description">Stores & Malls</p>
-          <a class="browse-link">View Project</a>
+      <div class="browse-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div data-hash="slide-1" class="browse-block browse-block-1">
+              <img
+                src="img/red-tower.png"
+                alt="Icon: Red Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">Red Finger Building</h3>
+              <p class="browse-description">Business Centers</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div data-hash="slide-2" class="browse-block browse-block-2">
+              <img
+                src="img/blue-tower.jpeg"
+                alt="Icon: Blue Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">Cubes Building</h3>
+              <p class="browse-description">Business Centers</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div data-hash="slide-3" class="browse-block browse-block-3">
+              <img
+                src="img/grey-tower.png"
+                alt="Icon: Grey Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">The Pencil Building</h3>
+              <p class="browse-description">Stores & Malls</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div data-hash="slide-4" class="browse-block browse-block-2">
+              <img
+                src="img/blue-tower.jpeg"
+                alt="Icon: Blue Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">Cubes Building</h3>
+              <p class="browse-description">Business Centers</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div data-hash="slide-3" class="browse-block browse-block-3">
+              <img
+                src="img/grey-tower.png"
+                alt="Icon: Grey Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">The Pencil Building</h3>
+              <p class="browse-description">Stores & Malls</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div data-hash="slide-1" class="browse-block browse-block-1">
+              <img
+                src="img/red-tower.png"
+                alt="Icon: Red Tower"
+                class="browse-image"
+              />
+              <h3 class="browse-minititle">Red Finger Building</h3>
+              <p class="browse-description">Business Centers</p>
+              <a class="browse-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.swiper-wrapper  -->
+        <div class="swiper-button-prev">
+          <!-- <img src="img/browse-arrow-prev.svg" alt="" class="browse__prev" /> -->
+        </div>
+        <div class="swiper-button-next">
+          <!-- <img src="img/browse-arrow-prev.svg" alt="" class="browse__next" /> -->
         </div>
       </div>
       <!-- /.browse-carousel -->
+      <div class="swiper-pagination"></div>
       <div class="browse-subblock">
         <h4 class="browse-subtitle">Explore all our works</h4>
         <button class="browse-button">View portfolio</button>
@@ -734,6 +789,7 @@
               required=""
               minlength="18"
               maxlength="18"
+              id="inp"
             />
           </div>
           <!-- /.quick__phone -->
@@ -889,15 +945,16 @@
         <span class="end__right-span _icon-Heart"></span>by Createx Studio
       </p>
 
-      <a href="#" class="end__go-link">
+      <button class="end__go-link">
         <img src="img/endUp.svg" alt="Icon: Strove Up" class="end__up" />
-      </a>
+      </button>
     </div>
     <!-- /.end -->
   </div>
   <!-- /.container -->
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
