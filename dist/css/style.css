@@ -1,238 +1,19 @@
-@font-face {
-  font-family: Lato;
-  font-display: swap;
-  src: url("../fonts/Lato-bold.woff2") format("woff2"), url("../fonts/Lato-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+@charset "UTF-8";
+@keyframes showup {
+  from {
+    opacity: 0;
+    top: 200px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
-@font-face {
-  font-family: Ubuntu;
-  font-display: swap;
-  src: url("../fonts/Ubuntu-bold.woff2") format("woff2"), url("../fonts/Ubuntu-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Lato;
-  font-display: swap;
-  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: Ubuntu;
-  font-display: swap;
-  src: url("../fonts/Ubuntu-regular.woff2") format("woff2"), url("../fonts/Ubuntu-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "icons";
-  src: url("../fonts/icons.woff?gn4awb") format("woff"), url("../fonts/icons.svg?gn4awb#icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=_icon-]::before,
-[class*=" _icon-"]::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icons" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-._icon-play-btn:before {
-  content: "\e900";
-  color: #fff;
-}
-
-._icon-browse-arrow-next:before {
-  content: "\e901";
-}
-
-._icon-browse-arrow-prev:before {
-  content: "\e902";
-}
-
-._icon-Facebook:before {
-  content: "\e904";
-}
-
-._icon-Heart:before {
-  content: "\e905";
-}
-
-._icon-icon-construction:before {
-  content: "\e906";
-}
-
-._icon-icon-hand:before {
-  content: "\e907";
-}
-
-._icon-icon-like:before {
-  content: "\e908";
-}
-
-._icon-icon-painting:before {
-  content: "\e909";
-}
-
-._icon-icon-pantone:before {
-  content: "\e90a";
-}
-
-._icon-icon-plan:before {
-  content: "\e90b";
-}
-
-._icon-icon-slippers:before {
-  content: "\e90c";
-}
-
-._icon-logo:before {
-  content: "\e90d";
-}
-
-._icon-Messanger:before {
-  content: "\e90e";
-}
-
-._icon-talk-to-us:before {
-  content: "\e90f";
-  font-size: 2.5rem;
-  align-self: center;
-  color: #FF5A30;
-}
-
-._icon-Twitter:before {
-  content: "\e910";
-}
-
-._icon-Whatsapp:before {
-  content: "\e911";
-}
-
-._icon-YouTube:before {
-  content: "\e912";
-}
-
-._icon-call-us:before {
-  content: "\e913";
-  font-size: 2.5rem;
-  align-self: center;
-  color: #FF5A30;
-}
-
-header {
-  background-color: white;
-}
-
-.container {
-  max-width: 87.5rem;
-  margin: auto;
-}
-
-.navbar {
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
-
-.navbar__block {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navbar__block-1 {
-  display: flex;
-}
-
-.navbar__logo-link {
-  align-self: center;
-}
-
-.navbar__image {
-  margin-right: 1.25rem;
-  height: 1.375rem;
-  width: 8.125rem;
-}
-
-.navbar__list {
-  display: flex;
-}
-
-.navbar__item {
-  margin-right: 2.5rem;
-}
-
-.navbar__link {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 160%;
-  color: #424551;
-}
-
-.navbar__block-2 {
-  display: flex;
-}
-
-.navbar__top {
-  height: 52px;
-  align-self: center;
-}
-
-.navbar__top-1 {
-  display: flex;
-}
-
-.navbar__subblock {
-  margin-left: 12px;
-}
-.navbar__subblock-1 {
-  margin-right: 36px;
-}
-
-.navbar__title {
-  margin: 0;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 150%;
-  align-items: center;
-}
-
-.navbar__phone {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 150%;
-  align-items: center;
-  color: #1E212C;
-}
-
-.navbar__mail {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 150%;
-  align-items: center;
-  color: #1E212C;
-}
-
-.construction {
+.form div,
+.login,
+.signup {
   position: relative;
+<<<<<<< HEAD
   width: 100%;
   height: 988px;
 }
@@ -1539,343 +1320,217 @@ textarea {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FFFFFF;
+=======
+  animation: showup 0.5s ease-out forwards;
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
 }
 
-.quick__label input {
-  position: absolute;
+.form > div:nth-child(2) {
   opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-  margin: auto;
+  animation-delay: 0.3s;
 }
 
-.checkmark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 16px;
-  width: 16px;
-  background-color: #eee;
-  border-radius: 3px;
+.form > div:nth-child(3) {
+  opacity: 0;
+  animation-delay: 0.6s;
 }
 
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
+.form > div:nth-child(4) {
+  opacity: 0;
+  animation-delay: 0.9s;
 }
 
-.container input:checked ~ .checkmark {
-  background-color: #FF5A30;
+.form > div:nth-child(5) {
+  opacity: 0;
+  animation-delay: 1.2s;
 }
 
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+.form > div:nth-child(6) {
+  opacity: 0;
+  animation-delay: 1.5s;
 }
 
-.container input:checked ~ .checkmark:after {
+.form > div:nth-child(7) {
+  opacity: 0;
+  animation-delay: 1.8s;
+}
+
+.form > div:nth-child(8) {
+  opacity: 0;
+  animation-delay: 2.1s;
+}
+
+.login {
+  opacity: 0;
+  animation-delay: 2.4s;
+}
+
+.signup {
+  opacity: 0;
+  animation-delay: 2.7s;
+}
+
+/* Complete Signup shake */
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+section {
+  width: 100%;
+  padding: 38px 22px 32px;
+  background-color: #fff;
+  background: url(../img/Shape.svg) no-repeat right bottom;
+}
+
+section h1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.46px;
+}
+
+section form {
+  min-height: 368px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+section .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+input {
+  background-color: transparent;
+}
+
+input[type=text],
+input[type=email] {
+  text-overflow: ellipsis;
+  /* Многоточие */
+}
+
+.email {
+  background: url(../img/Shape1.svg) no-repeat right;
+}
+
+.input-block label,
+.birthday__title,
+.gender__title {
+  font-size: 12px;
+  color: #7c7c7c;
   display: block;
 }
 
-.container .checkmark:after {
-  left: 5px;
-  top: 2px;
-  width: 3px;
-  height: 7px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.input-block input,
+select {
+  width: 100%;
+  height: 26px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
-.footer {
-  background: #1E212C;
-  padding: 82px 0 20px 0;
+select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/Shape2.svg) no-repeat right;
 }
 
-.end {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 493px 495px;
-  column-gap: 242px;
-}
-
-.end__icon-block {
+.birthday__select {
   display: flex;
+  justify-content: space-between;
 }
 
-.end__image {
-  margin-right: 62px;
+.birthday .birthday__select :nth-child(1) {
+  width: 56px;
 }
 
-.end__WhatsApp-link {
-  color: #FFFFFF;
-  opacity: 0.6;
-  font-size: 24px;
-  margin-right: 15px;
+.birthday .birthday__select :nth-child(2) {
+  width: 91px;
 }
 
-.end__Messanger-link {
-  color: #FFFFFF;
-  opacity: 0.6;
-  font-size: 24px;
-  margin-right: 14px;
+.birthday .birthday__select :nth-child(3) {
+  width: 67px;
 }
 
-.end__facebook-link {
-  color: #FFFFFF;
-  opacity: 0.6;
-  font-size: 24px;
-  margin-right: 15px;
+.gender__block {
+  height: 26px;
+  line-height: 26px;
 }
 
-.end__Twitter-link {
-  color: #FFFFFF;
-  opacity: 0.6;
-  font-size: 24px;
-  margin-right: 17.5px;
-}
-
-.end__YouTube-link {
-  color: #FFFFFF;
-  opacity: 0.6;
-  font-size: 24px;
-}
-
-.end__article {
-  max-width: 493px;
-  max-height: 84px;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #FFFFFF;
-  opacity: 0.6;
-  margin: 25px 0 0 0;
-}
-
-.end__right-title {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  color: #FFFFFF;
-  margin: 0 0 24px 0;
-}
-
-.end__subscribe {
-  position: relative;
-  max-width: 495px;
-  max-height: 44px;
-}
-
-.end__input {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  width: 495px;
-  height: 44px;
-  padding-left: 16px;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  padding-right: 145px;
-  color: #FFFFFF;
-}
-
-.end__button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 131px;
-  height: 44px;
-  background: #FF5A30;
-  border-radius: 0px 4px 4px 0px;
-  border: none;
+.login-signup {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 44px;
 }
 
-.end__under {
-  width: 495px;
-  height: 36px;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  align-items: center;
-  color: #FFFFFF;
-  opacity: 0.6;
-}
-
-.end__col {
-  padding-top: 49px;
-  grid-template-columns: 349px 137px 151px;
-  display: grid;
-  column-gap: 125px;
-}
-
-.end__col-1-title {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  align-items: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.end__span-address {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #FFFFFF;
-}
-
-.end__span {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #FFFFFF;
-}
-
-.end__address {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #FFFFFF;
-  opacity: 0.6;
-  display: inline-block;
-}
-
-.end__link {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #FFFFFF;
-  opacity: 0.6;
-}
-
-.end__col-list {
-  padding: 0;
-}
-
-.end__col-2-link {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  align-items: center;
-  color: #FFFFFF;
-  opacity: 0.6;
-}
-
-.end__rights {
-  display: grid;
-  grid-template-columns: 787px 126px;
-  justify-content: space-evenly;
-  column-gap: 242px;
-}
-
-.end__rights-block {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  align-items: center;
-  color: #FFFFFF;
-  margin: 60px 0 0 0;
-}
-
-.end__right-span {
-  margin: 0 4.5px 0 4.5px;
-}
-
-._icon-Heart {
-  color: #FF5A30;
-}
-
-.end__go-link {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
-  border: 1px solid #eeeeee;
-  background-color: #FF5A30;
-  padding: 18px;
-  z-index: 99;
-  border-radius: 4px;
-  border: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-  transition: all 0.5s ease-out 0s;
-}
-button:hover {
-  transition: all 0.7s ease-out 0s;
-  transform: scale(110%);
-}
-
-ul li {
-  text-decoration: none;
-  list-style: none;
+.login {
+  font-size: 13px;
+  line-height: 15px;
 }
 
 a {
-  text-decoration: none;
+  color: #5a61ed;
+}
+
+section button {
+  height: 32px;
+  width: 154px;
+  border: none;
+  outline: none;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  background-color: #5a61ed;
   cursor: pointer;
 }
 
-h2 {
-  font-size: 2.875rem;
+form button:hover {
+  opacity: 0.8;
 }
 
-@media (max-width: 532px) {
-  h2 {
-    font-size: 2rem;
-  }
+aside {
+  position: relative;
+  max-width: 137px;
+  width: 100%;
+  background: #5a61ed;
 }
-@media (max-width: 332px) {
-  h2 {
-    font-size: 1.875rem;
-  }
+
+aside p {
+  position: absolute;
+  right: -45px;
+  bottom: 70px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 63px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  transform: rotate(-90deg);
+  white-space: nowrap;
 }
+<<<<<<< HEAD
 @media (min-width: 1250px) {
   .swiper-button-prev {
     left: 1075px;
@@ -2123,38 +1778,30 @@ h2 {
   .end__YouTube-link:hover {
     color: red;
   }
+=======
+
+.input-block input.invalid {
+  color: #ff2828;
+  border-color: #ff2828;
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
 }
-@media (max-width: 1530px) {
-  .facts::before {
-    background-size: 35%;
-  }
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: #ff2828;
 }
-@media (max-width: 1440px) {
-  .navbar__list {
-    padding-left: 20px;
-  }
 
-  .navbar__item {
-    margin-right: 1.5rem;
-  }
-
-  .navbar__phone {
-    font-size: 1rem;
-  }
-
-  .navbar__mail {
-    font-size: 1rem;
-  }
-
-  .value__wrapper {
-    max-width: 1180px;
-  }
+.gender label {
+  position: relative;
+  padding-left: 18px;
+  /* открытая область radio button */
+  cursor: pointer;
+  margin-right: 15px;
 }
-@media (max-width: 1250px) {
-  .browse-top {
-    margin-left: 50px;
-  }
 
+<<<<<<< HEAD
   .browse-block {
     width: 310px;
     height: 390px;
@@ -2230,107 +1877,93 @@ h2 {
     grid-template-columns: 400px 126px;
     column-gap: 262px;
   }
+=======
+/* Спрятать кнопку radio */
+label input[type=radio] {
+  position: absolute;
+  /* спраятать на всех браузерах */
+  opacity: 0;
+  width: 0;
+  height: 0;
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
 }
-@media (max-width: 1220px) {
-  .construction {
-    padding-top: 150px;
-  }
 
-  .construction__wrapper {
-    text-align: center;
-    padding: 0;
-  }
-
-  .construction__title {
-    margin: auto;
-    margin-bottom: 30px;
-  }
-
-  .construction__statue {
-    margin: auto;
-    margin-bottom: 77px;
-  }
-
-  .construction__next {
-    top: 296px;
-  }
-
-  .construction__prev {
-    top: 296px;
-  }
-
-  .construction__list {
-    justify-content: center;
-  }
-
-  .construction__number {
-    margin: auto;
-  }
-
-  .value__wrapper {
-    max-width: 970px;
-  }
-
-  .value__name,
-.value__phone {
-    max-width: 230px;
-  }
-
-  .value__message {
-    max-width: 357px;
-  }
-
-  .services__block {
-    width: 240px;
-    height: 240px;
-  }
-
-  .services__main-two {
-    justify-content: space-evenly;
-  }
-
-  ._icon-icon-construction {
-    padding-top: 60px;
-  }
-
-  ._icon-icon-plan {
-    padding-top: 60px;
-  }
-
-  ._icon-icon-pantone {
-    padding-top: 60px;
-  }
-
-  ._icon-icon-painting {
-    padding-top: 60px;
-  }
-
-  .services__subsentence {
-    font-size: 17px;
-  }
-
-  .partners__picture {
-    width: 410px;
-    height: 100%;
-  }
-
-  .partners__discription-bottom {
-    margin-right: 30px;
-  }
-
-  .partners__image-block {
-    margin-right: 20px;
-  }
-
-  .partners__clients {
-    margin: 0 auto 0 20px;
-  }
+label span {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #5a61ed;
+  background-color: #fff;
+  border-radius: 50%;
 }
-@media (max-width: 1095px) {
-  .browse-top {
-    margin-left: 50px;
+
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5a61ed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+label:hover span {
+  background-color: #eee;
+}
+
+label input:checked ~ span:after {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  color: #111111;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f5fc;
+}
+
+main {
+  display: flex;
+  max-width: 665px;
+  min-height: 480px;
+  width: 100%;
+  margin: 0 15px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    max-width: 550px !important;
   }
 
+<<<<<<< HEAD
   .browse-block {
     width: 300px;
     height: 350px;
@@ -2341,10 +1974,14 @@ h2 {
   }
 
   .browse-image {
+=======
+  section header {
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
     max-width: 300px;
-    max-height: 265px;
+    margin: auto;
   }
 
+<<<<<<< HEAD
   .quick__main {
     justify-content: center;
     margin: 0;
@@ -2797,15 +2434,27 @@ h2 {
   .services__view-title {
     font-size: 23px;
     margin: auto;
+=======
+  section .form {
+    display: block !important;
+    max-width: 300px;
+    min-width: 234px;
+    width: 100%;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+
+  .input-block,
+.gender {
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
     margin-bottom: 20px;
   }
 
-  .services__view {
-    display: block;
-    text-align: center;
-    padding-bottom: 30px;
+  .login-signup {
+    flex-direction: column;
   }
 
+<<<<<<< HEAD
   .browse-carousel {
     display: block;
   }
@@ -2936,16 +2585,29 @@ h2 {
   }
 
   .services__main-two {
+=======
+  .login {
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
     margin-bottom: 20px;
   }
-
-  .services__button {
-    margin-bottom: 50px;
+}
+@media only screen and (max-width: 400px) {
+  main {
+    flex-direction: column;
   }
 
-  .partners-title {
+  aside {
+    max-width: 400px;
+    height: 60px;
+  }
+
+  aside p {
+    position: static;
+    transform: rotate(0);
+    text-align: center;
     font-size: 30px;
   }
+<<<<<<< HEAD
 
   .partners__saying {
     font-size: 31px;
@@ -3248,4 +2910,6 @@ h2 {
   .quick__block {
     height: 690px;
   }
+=======
+>>>>>>> f2628c573123b7ceb68cba0c889999830581fb8a
 }
